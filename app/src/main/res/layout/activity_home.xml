@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/AppbarLayoutID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/HomeToolbarID"
+                app:titleTextColor="@android:color/white"
+                android:background="@color/colorAccent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:text="Mutty Chat"
+                        android:textColor="@android:color/white"
+                        android:textSize="17sp"></TextView>
+                </RelativeLayout>
+
+
+
+            </androidx.appcompat.widget.Toolbar>
+
+
+            <com.google.android.material.tabs.TabLayout
+               android:id="@+id/TablayoutID"
+
+                android:background="@color/colorAccent"
+                android:layout_width="match_parent"
+                app:tabTextColor="@android:color/white"
+                android:layout_height="wrap_content">
+            </com.google.android.material.tabs.TabLayout>
+
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/ViewPagerIDID"
+            android:layout_below="@+id/AppbarLayoutID"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+        </androidx.viewpager.widget.ViewPager>
+
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

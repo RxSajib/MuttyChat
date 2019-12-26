@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "358153898325",
+    "firebase_url": "https://muttychatapp.firebaseio.com",
+    "project_id": "muttychatapp",
+    "storage_bucket": "muttychatapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:358153898325:android:e66f6f88bf9d8dfc3107dc",
+        "android_client_info": {
+          "package_name": "com.muttychat.muttychat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "358153898325-7bqq0s77o7chbsbvqpac8096i5ju9ais.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.muttychat.muttychat",
+            "certificate_hash": "834dfb101414beaee3220dc8507b542587d606c1"
+          }
+        },
+        {
+          "client_id": "358153898325-te1351l4q5p4pdke7f5bvr4u0pl944pn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmqPH9EIZGdy3s7TSfDD8GBMk3q7rrVaU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "358153898325-te1351l4q5p4pdke7f5bvr4u0pl944pn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/ProfileToolbarID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        app:titleTextColor="@android:color/white">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="Setup your profile first"
+                android:textColor="@android:color/white"
+                android:textSize="17sp"></TextView>
+
+
+        </RelativeLayout>
+
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_below="@id/ProfileToolbarID"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:weightSum="3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_weight="1"
+                android:background="#F5F5F5"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/ProfileImageID"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="100dp"
+                    android:elevation="5dp"
+                    android:src="@drawable/defaultimage"
+                    android:layout_height="100dp">
+
+                </de.hdodenhof.circleimageview.CircleImageView>
+
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_weight="2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+
+
+                <Button
+                    android:id="@+id/EnterButtonID"
+                    android:background="@drawable/login_button_design"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="match_parent"
+                    android:text="Setup Account"
+                    android:layout_height="wrap_content">
+
+
+                </Button>
+
+
+                <RelativeLayout
+                    android:layout_centerVertical="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <EditText
+                        android:id="@+id/UserNameID"
+                        android:background="@drawable/edittext_design"
+                        android:layout_marginLeft="25dp"
+                        android:padding="12dp"
+                        android:singleLine="true"
+                        android:inputType="text"
+                        android:drawableLeft="@drawable/persionicon"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="25dp"
+                        android:hint="Enter UserName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    </EditText>
+
+
+                    <EditText
+                        android:id="@+id/EmailAddressID"
+                        android:background="@drawable/edittext_design"
+                        android:layout_marginLeft="25dp"
+                        android:padding="12dp"
+                        android:drawableLeft="@drawable/email_icon"
+                        android:layout_below="@+id/UserNameID"
+                        android:layout_marginRight="25dp"
+                        android:hint="Enter Email"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:inputType="textEmailAddress"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="wrap_content">
+                    </EditText>
+
+                    <EditText
+                        android:id="@+id/LocationddressID"
+                        android:background="@drawable/edittext_design"
+                        android:layout_marginLeft="25dp"
+                        android:padding="12dp"
+                        android:singleLine="true"
+                        android:inputType="text"
+                        android:drawableLeft="@drawable/locationicon"
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/EmailAddressID"
+                        android:layout_marginRight="25dp"
+                        android:hint="Enter Location"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                    </EditText>
+
+
+                </RelativeLayout>
+
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+</RelativeLayout>

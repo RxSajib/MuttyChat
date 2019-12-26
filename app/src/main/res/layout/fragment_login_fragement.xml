@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginFragement">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <EditText
+            android:id="@+id/LoginEmailID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/edittext_design"
+            android:drawableLeft="@drawable/email_icon"
+            android:hint="Enter Your Email"
+            android:inputType="textEmailAddress"
+            android:padding="10dp"
+            android:singleLine="true"></EditText>
+
+        <EditText
+            android:id="@+id/LoginPasswordID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/LoginEmailID"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/edittext_design"
+            android:drawableLeft="@drawable/passwordicon"
+            android:hint="Enter Your Password"
+            android:inputType="textPassword"
+            android:padding="10dp"
+            android:singleLine="true">
+
+        </EditText>
+
+        <Button
+            android:id="@+id/LoginButtonID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/LoginPasswordID"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/login_button_design"
+            android:padding="5dp"
+            android:text="sign in"
+            android:textColor="@android:color/white">
+
+        </Button>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/LayoutID"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:text="OR"
+            android:textSize="20sp">
+
+        </TextView>
+
+        <RelativeLayout
+            android:id="@+id/LayoutID"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_above="@id/ForgotPasswordButtonID"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_horizontal">
+
+
+            <RelativeLayout
+                android:id="@+id/FaceBookLoginID"
+                android:layout_width="130dp"
+                android:layout_height="45dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/facebook_buttondesign"
+                android:elevation="2dp">
+
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/facebooklogo">
+
+                </ImageView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="130dp"
+                android:layout_height="45dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@+id/FaceBookLoginID"
+                android:background="@drawable/google_buttondesign"
+                android:elevation="2dp">
+
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/googleicon">
+
+                </ImageView>
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/ForgotPasswordButtonID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            android:text="Forgot Password">
+
+        </TextView>
+
+
+    </RelativeLayout>
+</FrameLayout>

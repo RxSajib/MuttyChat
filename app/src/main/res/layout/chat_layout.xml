@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ReciverProfieImageID"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/defaultimage">
+
+        </de.hdodenhof.circleimageview.CircleImageView>
+
+        <TextView
+            android:id="@+id/ReciverTextID"
+            android:layout_toRightOf="@id/ReciverProfieImageID"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="3dp"
+            android:textSize="14sp"
+            android:padding="7dp"
+            android:text="Hello i am from bd"
+            android:background="@drawable/reciver_background"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+
+        <TextView
+            android:id="@+id/SnderTrxtID"
+            android:text="hello hi how are u"
+            android:padding="7dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/sender_background"
+            android:textColor="@android:color/white"
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+        </TextView>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
